@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <section>
+    <nav class="bg-white shadow-md w-full">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <span class="text-[22px] font-bold font-zen">H C I</span>
+                </div>
+    
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#section1" class="text-gray-600 hover:text-gray-900 font-zen">Home</a>
+                    <a href="#section2" class="text-gray-600 hover:text-gray-900 font-zen">Course</a>
+                    <a href="#obj" class="text-gray-600 hover:text-gray-900 font-zen">Objective</a>
+                    <a href="#section3" class="text-gray-600 hover:text-gray-900 font-zen">Books</a>
+                    <a href="#section4" class="text-gray-600 hover:text-gray-900 font-zen">Lecture</a>
+                </div>
+    
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">
+                        Start Learning
+                    </button>
+                </div>
+    
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button onclick="toggleMenu()" class="text-gray-600 hover:text-gray-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+    
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="#" class="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md">Home</a>
+                    <a href="#" class="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md">About</a>
+                    <a href="#" class="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md">Lecture</a>
+                    <a href="#" class="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md">Contact</a>
+                    <button class="w-full bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 mt-3">
+                        Start Learning
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    </section>
+
+    <section>
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <!-- Left Column: Text Content -->
+                <div class="space-y-6">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900">
+                        Our Teacher Khawja Tahir Mehmood
+                    </h1>
+                    <h1 class="text-2xl md:text-2xl font-bold text-gray-900">Intro</h1>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                       He is Lecturer Department of Computer Science Federal Urdu University of Arts, Science & Technology. Islamabad.He has completed his MS(CS) Degree in 2004 from M.A.J.U Islamabad. Over the period of 20 years in Teaching, he has also served in various administrative positions as Head of Department (BS), In charge Final Year Project, Director Student Affairs, In charge Sports, Member University Disciplinary Committee, Program Coordinator, Event Organizer etc..
+
+                       During his career he had served in various reputable Organizations i.e Punjab  Group of Colleges (PGC), University of Central Punjab (UCP). He joined FUUAST Islamabad as permanent faculty member in 2009 as Lecturer (Computer Science) & taught courses li.e. Human Computer Interaction (HCI), Software Project Management (SPM), Software Engineering, Object Oriented Software Engineering & Final Year Project at Undergraduate & Graduate level. He is also having a Youtube channel i.e. KHAWAJA SCIENCE ACADEMY which is been successfully created in 2020 (covid time) for the students. He has also supervised many Final Year Research Projects for FUUAST Islamabad i.e Medical Billing System, Graduate Research Management System, Transport Management System, Diary Management System, Account Management System. 
+                 
+                        He has been originator of Final Year Project (FYP Course) in 2014.
+                 He has also published research article in IEEE. His area of Research is in Human Computer Interaction, Usability Evaluation, Mobile Usability, Software Engineering, Databases.
+                    </p>
+                </div>
+        
+                <!-- Right Column: Circular Image -->
+                <div class="flex justify-center">
+                    <div class="rounded-full overflow-hidden w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
+                        <img 
+                            src="khwaja.jpg" 
+                            alt="Description" 
+                            class="w-full h-full object-cover"
+                            data-aos="fade-right">                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-gray-50" id="section2">
+        <div class=" ">
+          <!-- Section Header -->
+          <div class="text-center mb-10">
+            <h2 class="text-3xl font-bold text-gray-900 mb-2">Course Contents</h2>
+            <p class="text-gray-600">Master each chapter at your own pace</p>
+          </div>
+    
+          <!-- Chapters List -->
+          <div class="space-y-4">
+            <!-- Chapter 1 -->
+            <div class="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow duration-200">
+              <div class="flex items-start gap-4">
+                <div class="p-2 bg-blue-100 rounded-full">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <div class="flex justify-between items-start">
+                    <h3 class="text-lg font-semibold text-gray-900">Chapter 1: Introduction to the Course</h3>
+                    <span class="text-sm text-gray-500">1 Hour</span>
+                  </div>
+                  <p class="mt-1 text-gray-600">Key HCI concept and Usability issue</p>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Chapter 2 -->
+            <div class="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow duration-200">
+              <div class="flex items-start gap-4">
+                <div class="p-2 bg-blue-100 rounded-full">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <div class="flex justify-between items-start">
+                    <h3 class="text-lg font-semibold text-gray-900">Chapter 2: Human capabilities and Limitation</h3>
+                    <span class="text-sm text-gray-500">57 mins</span>
+                  </div>
+                  <p class="mt-1 text-gray-600">Human Information processing model</p>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Chapter 3 -->
+            <div class="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow duration-200">
+              <div class="flex items-start gap-4">
+                <div class="p-2 bg-blue-100 rounded-full">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <div class="flex justify-between items-start">
+                    <h3 class="text-lg font-semibold text-gray-900">Chapter 3: Computer based Devices and basic of intreaction</h3>
+                    <span class="text-sm text-gray-500">1 hour</span>
+                  </div>
+                  <p class="mt-1 text-gray-600"> basic of input output devices and interactivity</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow duration-200">
+                <div class="flex items-start gap-4">
+                  <div class="p-2 bg-blue-100 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                  </div>
+                  <div class="flex-1">
+                    <div class="flex justify-between items-start">
+                      <h3 class="text-lg font-semibold text-gray-900">Chapter 4: User Inter Face Style</h3>
+                      <span class="text-sm text-gray-500">33 mins</span>
+                    </div>
+                    <p class="mt-1 text-gray-600">concept of navigation drop down menu etc</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow duration-200">
+                <div class="flex items-start gap-4">
+                  <div class="p-2 bg-blue-100 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                  </div>
+                  <div class="flex-1">
+                    <div class="flex justify-between items-start">
+                      <h3 class="text-lg font-semibold text-gray-900">Chapter 5:Form Fill Interface Style</h3>
+                      <span class="text-sm text-gray-500">35 mins</span>
+                    </div>
+                    <p class="mt-1 text-gray-600">different form, what his use in website</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow duration-200">
+                <div class="flex items-start gap-4">
+                  <div class="p-2 bg-blue-100 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                  </div>
+                  <div class="flex-1">
+                    <div class="flex justify-between items-start">
+                      <h3 class="text-lg font-semibold text-gray-900">Chapter 6: Physical Egonomics</h3>
+                      <span class="text-sm text-gray-500">38 mins</span>
+                    </div>
+                    <p class="mt-1 text-gray-600">Media different types Of interaction</p>
+                  </div>
+                </div>
+              </div>
+      
+          </div>
+        </div>
+      </section>
+      <section class="max-w-4xl mx-auto px-6 py-12 "id="obj">
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <div class="bg-indigo-600 text-white text-center py-6">
+            <h2 class="text-3xl font-bold">Course Objective</h2>
+    </div>
+    <div class="p-8 space-y-6">
+      <p class="text-lg">
+        By the end of this course, students will be able to:
+      </p>
+      <ul class="list-disc list-inside space-y-3">
+        <li>
+          Understand the principles and theories of human-computer interaction and usability design.
+        </li>
+        <li>
+          Evaluate and design user interfaces for optimal user experience.
+        </li>
+        <li>
+          Apply cognitive psychology concepts to improve interface interactions.
+        </li>
+        <li>
+          Utilize tools and techniques to prototype and test user interfaces effectively.
+        </li>
+        <li>
+          Collaborate in teams to solve complex interaction design problems.
+        </li>
+      </ul>
+      <div class="mt-6 text-center">
+        <button  class="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-md hover:bg-indigo-700 transition duration-200">
+          Learn More
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      <section id="section3" class="bg-gray-100 py-16">
+        <!-- Heading -->
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold text-gray-800">Human Interaction Course Books</h2>
+          <p class="text-lg text-gray-600">Explore our recommended course books on human interaction.</p>
+        </div>
+      
+        <!-- Course Books List -->
+        <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+          <!-- Book 1 -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden"data-aos="fade-in">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV5vCe8ZdnRHPZjo_bGVSmnD5K8qdR8KzErw&s" alt="Book 1" class="w-full h-56 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800">Human Interaction: Theories and Practices</h3>
+              <p class="text-gray-600 mt-4">This book covers various theories and practical approaches to human interaction, focusing on communication and understanding behaviors.</p>
+              <a href="#" class="text-blue-500 hover:underline mt-4 inline-block">Learn More</a>
+            </div>
+          </div>
+      
+          <!-- Book 2 -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden "data-aos="fade-in">
+            <img src="https://m.media-amazon.com/images/I/613L6EjWHBL._AC_UF1000,1000_QL80_.jpg" alt="Book 2" class="w-full h-56 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800">Understanding Social Dynamics</h3>
+              <p class="text-gray-600 mt-4">This book dives into the social aspects of human interaction, offering in-depth analyses of group dynamics and individual behaviors.</p>
+              <a href="#" class="text-blue-500 hover:underline mt-4 inline-block">Learn More</a>
+            </div>
+          </div>
+      
+          <!-- Book 3 -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden"data-aos="fade-in">
+            <img src="https://m.media-amazon.com/images/I/6182VouFkGL._AC_UF350,350_QL50_.jpg" alt="Book 3" class="w-full h-56 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800">Cognitive Science and Human Interaction</h3>
+              <p class="text-gray-600 mt-4">A comprehensive guide to cognitive science's impact on human interaction, focusing on perception, decision-making, and social behaviors.</p>
+              <a href="#" class="text-blue-500 hover:underline mt-4 inline-block">Learn More</a>
+            </div>
+          </div>
+      
+          <!-- Book 4 -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden"data-aos="fade-in">
+            <img src="sa.jpg" alt="Book 4" class="w-full h-56 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800">The Psychology of Communication</h3>
+              <p class="text-gray-600 mt-4">A deep dive into the psychological processes behind communication, focusing on verbal and non-verbal cues.</p>
+              <a href="#" class="text-blue-500 hover:underline mt-4 inline-block">Learn More</a>
+            </div>
+          </div>
+      
+          <!-- Book 5 -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden"data-aos="fade-in">
+            <img src="adv.jpg" alt="Book 5" class="w-full h-56 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800">Advanced Social Interaction</h3>
+              <p class="text-gray-600 mt-4">This book provides insights into complex social interactions, focusing on how individuals and groups adapt and respond to one another.</p>
+              <a href="#" class="text-blue-500 hover:underline mt-4 inline-block">Learn More</a>
+            </div>
+          </div>
+      
+          <!-- Book 6 -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden"data-aos="fade-in">
+            <img src="content.jpg" alt="Book 6" class="w-full h-56 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800">Digital Communication and Human Interaction</h3>
+              <p class="text-gray-600 mt-4">Explores the role of technology in human communication, analyzing how digital tools influence social behaviors and relationships.</p>
+              <a href="#" class="text-blue-500 hover:underline mt-4 inline-block">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="max-w-6xl mx-auto p-6" id="section4">
+        <!-- Heading -->
+        <h2 class="text-3xl font-bold text-center mb-8">Lecture</h2>
+        
+        <!-- Video Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Video 1 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <div class="w-full aspect-w-16 aspect-h-9"data-aos="fade-in">
+                <iframe 
+                src="https://www.youtube.com/embed/PCjP7emhm7M?si=bMnMA0tJKqkL9ias" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen 
+                class="w-full h-full"
+              ></iframe>
+            </div>
+            <p class="text-center text-gray-700 font-medium p-4">Video Lecture 1</p>
+          </div>
+      
+          <!-- Video 2 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <div class="w-full aspect-w-16 aspect-h-9"data-aos="fade-in">
+                <iframe 
+                src="https://www.youtube.com/embed/2THkpthq8cU?si=QOl92JBwo2yfjPSK" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen 
+                class="w-full h-full"
+              ></iframe>
+              
+            </div>
+            <p class="text-center text-gray-700 font-medium p-4">Video Lecture 2</p>
+          </div>
+      
+          <!-- Video 3 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <div class="w-full aspect-w-16 aspect-h-9"data-aos="fade-in">
+                <iframe 
+                src="https://www.youtube.com/embed/fIC1XGb_0bg?si=N8H3TqZiCiYagttr" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen 
+                class="w-full h-full"
+              ></iframe>
+              
+            </div>
+            <p class="text-center text-gray-700 font-medium p-4">Video Lecture 3</p>
+          </div>
+      
+          <!-- Video 4 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <div class="w-full aspect-w-16 aspect-h-9"data-aos="fade-in">
+                <iframe 
+                src="https://www.youtube.com/embed/34RagMbaRhA?si=ZcyB-1EQcU3QI3VZ" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen 
+                class="w-full h-full"
+              ></iframe>
+              
+            </div>
+            <p class="text-center text-gray-700 font-medium p-4">Video Lecture 4</p>
+          </div>
+      
+          <!-- Video 5 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <div class="w-full aspect-w-16 aspect-h-9"data-aos="fade-in">
+                <iframe 
+                src="https://www.youtube.com/embed/IQjbIfjfRsY?si=-A0bcDqAQLFlkWpV" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen 
+                class="w-full h-full"
+              ></iframe>
+              
+            </div>
+            <p class="text-center text-gray-700 font-medium p-4">Video Lecture 5</p>
+          </div>
+      
+          <!-- Video 6 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <div class="w-full aspect-w-16 aspect-h-9"data-aos="fade-in">
+                <iframe 
+                src="https://www.youtube.com/embed/hzWr77RiHRI?si=xLpHUgMitJL03o_b" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen 
+                class="w-full h-full"
+              ></iframe>
+              
+            </div>
+            <p class="text-center text-gray-700 font-medium p-4">Video Lecture 8</p>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <div class="w-full aspect-w-16 aspect-h-9"data-aos="fade-in">
+                <iframe 
+                src="https://www.youtube.com/embed/hzWr77RiHRI?si=xLpHUgMitJL03o_b" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen 
+                class="w-full h-full"
+              ></iframe>
+              
+            </div>
+            <p class="text-center text-gray-700 font-medium p-4">Video Lecture 9</p>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <div class="w-full aspect-w-16 aspect-h-9"data-aos="fade-in">
+                <iframe 
+                src="https://www.youtube.com/embed/hzWr77RiHRI?si=xLpHUgMitJL03o_b" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen 
+                class="w-full h-full"
+              ></iframe>
+              
+            </div>
+            <p class="text-center text-gray-700 font-medium p-4">Video Lecture 7</p>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <div class="w-full aspect-w-16 aspect-h-9"data-aos="fade-in">
+                <iframe 
+                src="https://www.youtube.com/embed/hzWr77RiHRI?si=xLpHUgMitJL03o_b" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen 
+                class="w-full h-full"
+              ></iframe>
+              
+            </div>
+            <p class="text-center text-gray-700 font-medium p-4">Video Lecture 8</p>
+          </div>
+        </div>
+        
+      </section>
+      <section>
+        <footer class="bg-gray-800 text-gray-300 py-8">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap justify-between items-center">
+              <!-- Logo and Title -->
+              <div class="mb-4 md:mb-0">
+                <h1 class="text-xl font-bold text-white">Human-Computer Interaction</h1>
+                <p class="text-sm">Empowering intuitive and efficient interactions</p>
+              </div>
+        
+              <!-- Navigation Links -->
+              <div class="flex space-x-4">
+                <a href="#about" class="text-gray-300 hover:text-white">About</a>
+                <a href="#resources" class="text-gray-300 hover:text-white">Resources</a>
+                <a href="#contact" class="text-gray-300 hover:text-white">Contact</a>
+                <a href="#faq" class="text-gray-300 hover:text-white">FAQ</a>
+              </div>
+            </div>
+        
+            <hr class="my-6 border-gray-600" />
+        
+            <div class="flex flex-wrap justify-between items-center">
+              <!-- Social Links -->
+              <div class="flex space-x-4">
+                <a href="#" aria-label="Facebook" class="text-gray-300 hover:text-white">
+                  <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 8H6v4h3v12h5V12h3.642l.518-4H14V5.577c0-1.155.318-1.943 1.953-1.943H18V0h-3.184C11.67 0 9 2.24 9 5.828V8z"/></svg>
+                </a>
+                <a href="#" aria-label="Twitter" class="text-gray-300 hover:text-white">
+                  <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 4.557a9.93 9.93 0 0 1-2.357.637 4.528 4.528 0 0 0 1.987-2.498 9.229 9.229 0 0 1-2.894 1.1A4.92 4.92 0 0 0 16.845 3c-3.417 0-5.813 3.213-4.797 6.366A13.63 13.63 0 0 1 1.671 3.148a4.775 4.775 0 0 0-.66 2.481 4.919 4.919 0 0 0 2.197 4.1 4.52 4.52 0 0 1-2.228-.617v.062a4.901 4.901 0 0 0 3.946 4.768c-.522.156-1.064.226-1.608.17a4.928 4.928 0 0 0 4.59 3.353 9.86 9.86 0 0 1-6.204 2.134c-.403 0-.8-.021-1.19-.063A13.945 13.945 0 0 0 8.148 21c9.014 0 13.94-7.46 13.94-13.94 0-.211-.004-.422-.012-.633A9.935 9.935 0 0 0 24 4.557z"/></svg>
+                </a>
+                <a href="#" aria-label="LinkedIn" class="text-gray-300 hover:text-white">
+                  <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4.983 3.5A2.53 2.53 0 0 0 2.5 6.015 2.53 2.53 0 0 0 4.983 8.53a2.53 2.53 0 0 0 2.486-2.516A2.53 2.53 0 0 0 4.983 3.5zm.078 4.832h-.02c-1.679 0-2.778-.914-2.778-2.813C2.262 5.156 3.452 4 5.02 4c1.569 0 2.722.936 2.75 2.846-.03 1.89-1.114 2.816-2.71 2.816zM3.196 9.5H6.77v12.156H3.196zm11.004-5.625c-1.535 0-2.38.914-2.796 1.554v.02H11.4V9.5h2.53v6.617c0 2.106 1.054 2.783 2.45 2.783 1.417 0 2.323-1.034 2.323-2.757V9.5h2.59V16c0 3.43-1.823 4.902-4.544 4.902-2.725 0-3.685-2.079-3.685-2.079V21h-3.19V9.5h3.155v1.79s1.35-1.62 3.375-1.62c2.04 0 3.656 1.184 3.656 3.96V21h-3.191v-6.5c0-2.059-1.12-3.342-2.813-3.342z"/></svg>
+                </a>
+              </div>
+        
+              <!-- Copyright -->
+              <p class="text-sm text-gray-400 mt-4 md:mt-0">&copy; 2025 Human-Computer Interaction. All rights reserved.</p>
+            </div>
+          </div>
+        </footer>
+        
+      </section>
+
+
+
+
+
+
+
+
+
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+</body>
+</html>
