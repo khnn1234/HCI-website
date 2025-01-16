@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="output.css">
 </head>
 <body>
+  <div id="loader" class="fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 flex justify-center items-center z-[9999] hidden">
+    <!-- Loader content (e.g., spinner) can go here -->
+</div>
     <section>
     <nav class="bg-white shadow-md w-full">
         <div class="max-w-7xl mx-auto px-4">
@@ -233,7 +236,7 @@
         </li>
       </ul>
       <div class="mt-6 text-center">
-        <button  class="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-md hover:bg-indigo-700 transition duration-200">
+        <button  class="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-md hover:bg-indigo-700 transition duration-200" id="obj">
           Learn More
         </button>
       </div>
@@ -257,7 +260,7 @@
             <div class="p-6">
               <h3 class="text-xl font-semibold text-gray-800">Human Interaction: Theories and Practices</h3>
               <p class="text-gray-600 mt-4">This book covers various theories and practical approaches to human interaction, focusing on communication and understanding behaviors.</p>
-              <a href="#" class="text-blue-500 hover:underline mt-4 inline-block">Learn More</a>
+              <a href="https://www.ipl.org/essay/Implicit-And-Explicit-Prejudice-And-Interracial-Interaction-FK87MDH4AJPR" class="text-blue-500 hover:underline mt-4 inline-block">Learn More</a>
             </div>
           </div>
       
@@ -267,7 +270,7 @@
             <div class="p-6">
               <h3 class="text-xl font-semibold text-gray-800">Understanding Social Dynamics</h3>
               <p class="text-gray-600 mt-4">This book dives into the social aspects of human interaction, offering in-depth analyses of group dynamics and individual behaviors.</p>
-              <a href="#" class="text-blue-500 hover:underline mt-4 inline-block">Learn More</a>
+              <a href="https://dl.acm.org/doi/10.1145/3300937" class="text-blue-500 hover:underline mt-4 inline-block">Learn More</a>
             </div>
           </div>
       
@@ -277,7 +280,7 @@
             <div class="p-6">
               <h3 class="text-xl font-semibold text-gray-800">Cognitive Science and Human Interaction</h3>
               <p class="text-gray-600 mt-4">A comprehensive guide to cognitive science's impact on human interaction, focusing on perception, decision-making, and social behaviors.</p>
-              <a href="#" class="text-blue-500 hover:underline mt-4 inline-block">Learn More</a>
+              <a href="https://www.sciencedirect.com/science/article/pii/S1364661320302977" class="text-blue-500 hover:underline mt-4 inline-block">Learn More</a>
             </div>
           </div>
       
@@ -287,7 +290,7 @@
             <div class="p-6">
               <h3 class="text-xl font-semibold text-gray-800">The Psychology of Communication</h3>
               <p class="text-gray-600 mt-4">A deep dive into the psychological processes behind communication, focusing on verbal and non-verbal cues.</p>
-              <a href="#" class="text-blue-500 hover:underline mt-4 inline-block">Learn More</a>
+              <a href="https://www.sciencedirect.com/topics/social-sciences/communication-psychology#:~:text=Communication%20Psychology%20is%20the%20study,and%20psychological%20aspects%20of%20communication." class="text-blue-500 hover:underline mt-4 inline-block">Learn More</a>
             </div>
           </div>
       
@@ -297,7 +300,7 @@
             <div class="p-6">
               <h3 class="text-xl font-semibold text-gray-800">Advanced Social Interaction</h3>
               <p class="text-gray-600 mt-4">This book provides insights into complex social interactions, focusing on how individuals and groups adapt and respond to one another.</p>
-              <a href="#" class="text-blue-500 hover:underline mt-4 inline-block">Learn More</a>
+              <a href="https://giki.edu.pk/course/advanced-human-computer-interaction/" class="text-blue-500 hover:underline mt-4 inline-block">Learn More</a>
             </div>
           </div>
       
@@ -307,7 +310,7 @@
             <div class="p-6">
               <h3 class="text-xl font-semibold text-gray-800">Digital Communication and Human Interaction</h3>
               <p class="text-gray-600 mt-4">Explores the role of technology in human communication, analyzing how digital tools influence social behaviors and relationships.</p>
-              <a href="#" class="text-blue-500 hover:underline mt-4 inline-block">Learn More</a>
+              <a href="https://www.jointhecollective.com/article/the-dangers-of-over-reliance-on-digital-communication/" class="text-blue-500 hover:underline mt-4 inline-block">Learn More</a>
             </div>
           </div>
         </div>
@@ -520,6 +523,11 @@
     } else {
         mobileMenu.classList.add('hidden');
     }}
+
+    document.getElementById("obj").addEventListener("click", function () {
+            // Redirect to the obj.html page when the button is clicked
+            window.location.href = "objective.html"; // This navigates to the obj.html page
+        });
       </script>
 </body>
 </html>
